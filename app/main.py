@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from schema.user_input import UserInput
+from app.schema.user_input import UserInput
 import pandas as pd
-from models.prediction import predict_output, loaded_model, MODEL_VERSION
+from app.models.prediction import predict_output, loaded_model, MODEL_VERSION
 
 
 def classify_tenure(tenure_val):
@@ -50,7 +50,9 @@ def predict(data: UserInput):
     }
     try:
         prediction = predict_output(input)
-        return JSONResponse(status_code=200, content={'predicted_charges':round(prediction, 2)})
+        return JSONResponse(status_code=200, content={'Customer Churn':prediction})
     
     except Exception as e:
-        return JSONResponse(st)
+        print(e)
+        return JSONResponse(status_code=500, content={'Error':'Internal Server Error App'})
+    
