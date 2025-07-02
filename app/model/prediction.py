@@ -1,9 +1,12 @@
 import joblib
 import pandas as pd
+from pathlib import Path
 
 MODEL_VERSION = '1.0.0'
 
-with open(f'churn_prediction_pipeline.joblib', 'rb') as f:
+
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent 
+with open(f'{ROOT_DIR}/models/churn_prediction_pipeline.joblib', 'rb') as f:
     loaded_model = joblib.load(f)
 
 

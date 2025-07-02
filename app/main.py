@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from app.schema.user_input import UserInput
 import pandas as pd
-from app.models.prediction import predict_output, loaded_model, MODEL_VERSION
+from app.model.prediction import predict_output, loaded_model, MODEL_VERSION
 
 
 def classify_tenure(tenure_val):
