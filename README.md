@@ -3,6 +3,7 @@
 
 ## Important Links
 - [LIVE PROJECT LINK](https://customer-churn-prediction-ui.vercel.app/)
+- Video Demo: [Click Here](https://drive.google.com/file/d/1UPpWe2N63nd7HFPZiYD0FUQ0tLajAC6t/view?usp=sharing)
 - UI Code: [Click Here](https://github.com/AdityaKumbhar21/Customer_Churn_Prediction_UI)
 - Blog Link: [Click Here](https://medium.com/@adityakumbhar915/predicting-customer-churn-a-deep-dive-into-preventing-customer-loss-808fde23177e)
 - PPT Link: [Click Here](https://www.canva.com/design/DAGqxrdv3eY/kfacleE_9h_KqdHxgHdu4A/view?utm_content=DAGqxrdv3eY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha3f93a78ab)
