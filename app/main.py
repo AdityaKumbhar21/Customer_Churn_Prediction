@@ -32,7 +32,17 @@ app.add_middleware(
 
 @app.get('/')
 def home():
-    return {'Welcome'}
+    return {
+        'message': 'Customer Churn Predicion API'
+    }
+
+@app.get('/health')
+def health_check():
+    return {
+        'status': 'OK',
+        'version': MODEL_VERSION,
+        'model': loaded_model  is not None
+    }
 
 
 
